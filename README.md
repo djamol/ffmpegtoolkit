@@ -23,7 +23,11 @@ yum install git wget -y
 cd /opt
 git clone https://github.com/hostsoft/ffmpegtoolkit.git ffmpegtoolkit
 cd ffmpegtoolkit
-sh latest.sh
+#sh latest.sh
+#Background Run Script And Output store automatically in file
+
+sh latest.sh > FFMPEG-output.log 2>&1 &
+
 ```
   
 ### Check Path  , Included  *ImageMagick*
